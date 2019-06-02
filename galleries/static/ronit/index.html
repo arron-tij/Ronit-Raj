@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+a{
+   text-decoration:none;
+   color:white;
+}
+.container {
+  
+  position: relative;
+  width: 100%;
+  height:auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height:200px;
+  
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #444958;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  
+}
+
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 200px) {
+  body {
+    background-size:100% 100%;
+  }
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  border-bottom:4px solid white; 
+  
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  
+  
+}
+.column2 {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+  
+  
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  
+  
+  
+}
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column,.column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,.column2 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+img{
+border: 2px solid white;
+}
+</style>
+<script>
+
+
+ function hideothertaj(){
+document.getElementById('hhh').innerHTML="The Taj Mahal, India (1632)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+
+  }
+function showothertaj(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+
+  }
+
+
+function hideothercolos(){
+document.getElementById('hhh').innerHTML="The Colosseum, Rome (70 AD)";
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+  }
+function showothercolos(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('taj').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+  }
+
+
+function hideotherkukul(){
+document.getElementById('hhh').innerHTML="El Castillo, Mexico (18th-20th century)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+
+
+  }
+function showotherkukul(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('taj').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+
+  }
+
+
+function hideotherchrist(){
+document.getElementById('hhh').innerHTML="Christ The Redeemer, Rio De Janeiro (1931)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+
+  }
+function showotherchrist(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('taj').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+  }
+
+
+
+function hideotherwall(){
+document.getElementById('hhh').innerHTML="The Great Wall Of China, China (1987)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+
+  }
+function showotherwall(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('taj').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+  }
+
+
+
+
+function hideotherpetra(){
+document.getElementById('hhh').innerHTML="Petra, Jordan (5th century BC)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('machu').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+
+  }
+function showotherpetra(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('taj').style.opacity=1;
+document.getElementById('machu').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+  }
+
+
+
+function hideothermachu(){
+document.getElementById('hhh').innerHTML="Machu Picchu, Peru (1450)";
+document.getElementById('colos').style.opacity=0.5;
+document.getElementById('taj').style.opacity=0.5;
+document.getElementById('christ').style.opacity=0.5;
+document.getElementById('wall').style.opacity=0.5;
+document.getElementById('petra').style.opacity=0.5;
+document.getElementById('kukul').style.opacity=0.5;
+
+  }
+function showothermachu(){
+document.getElementById('hhh').innerHTML="The Seven Wonders Album";
+document.getElementById('colos').style.opacity=1;
+document.getElementById('taj').style.opacity=1;
+document.getElementById('christ').style.opacity=1;
+document.getElementById('wall').style.opacity=1;
+document.getElementById('petra').style.opacity=1;
+document.getElementById('kukul').style.opacity=1;
+  }
+</script>
+<body id="bdy">
+<video autoplay muted loop id="myVideo">
+  <source src="bgv2.mp4" type="video/mp4">
+</video>
+<!-- Header -->
+<div class="header">
+
+  <h1 id="hhh" class="content">The Seven Wonders Album</h1>
+	
+ <br><br><br><br><br>
+  
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column"> 
+    <div class="container" onmouseover="hideothertaj()" onmouseout="showothertaj()" id="taj">
+  <img src="images/taj.jpg" alt="Avatar" class="image"  >
+  <div class="overlay">
+    <div class="text" ><a href="pages/tajalbum.html">
+   <u >The Taj Mahal</u><br>
+	A white marble structure built by Shah Jahan. Situtated by the Yamuna River in Agra.
+        Click to view the album.
+
+	
+
+
+   </a></div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="column"> 
+    <div class="container" onmouseover="hideothercolos()" onmouseout="showothercolos()" id="colos">
+  <img src="images/colos.jpg" alt="Avatar" class="image" border="3px" >
+  <div class="overlay">
+    <div class="text"><a href="pages/colosalbum.html"><u >The Colosseum</u><br>
+	An oval amphitheatre in the centre of Rome. Largest amphitheatre in world.
+        Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+
+
+<div class="column"> 
+    <div class="container" onmouseover="hideotherpetra()" onmouseout="showotherpetra()" id="petra">
+  <img src="images/petra.jpg" alt="Avatar" class="image" border="3px">
+  <div class="overlay">
+    <div class="text"><a href="pages/petraalbum.html"><u >Petra</u><br>
+	An archaeological site in Jordan's southwestern desert containing tombs and temples.
+        Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="column"> 
+    <div class="container" onmouseover="hideotherwall()" onmouseout="showotherwall()" id="wall">
+  <img src="images/wall.jpg" alt="Avatar" class="image" border="3px">
+  <div class="overlay">
+    <div class="text"><a href="pages/wallalbum.html"><u >The Great Wall Of China</u><br>
+	Series of forti- fication systems built across the northern borders of china.
+        Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+  
+</div>
+<div class="row"> 
+  
+
+
+
+<div class="column2"> 
+    <div class="container" onmouseover="hideotherchrist()" onmouseout="showotherchrist()" id="christ">
+  <img src="images/christ.jpg" alt="Avatar" class="image" border="3px">
+  <div class="overlay">
+    <div class="text"><a href="pages/christalbum.html"><u >Christ The Redeemer</u><br>
+	An Art Deco stature of Jesus Christ in Rio created by French sculptor Paul Landowski.
+	Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+
+
+<div class="column2"> 
+    <div class="container" onmouseover="hideothermachu()" onmouseout="showothermachu()" id="machu">
+  <img src="images/machu.jpg" alt="Avatar" class="image" border="3px">
+  <div class="overlay">
+    <div class="text"><a href="pages/machualbum.html"><u >Machu Picchu</u><br>
+	An Incan citadel set high in the Andes Mountains in Peru abandoned in 1572.
+        Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="column2"> 
+    <div class="container" onmouseover="hideotherkukul()" onmouseout="showotherkukul()" id="kukul">
+  <img src="images/kukul.jpg" alt="Avatar" class="image" border="3px">
+  <div class="overlay">
+    <div class="text"><a href="pages/kukulalbum.html"><u >El Castillo</u><br>
+	Also known as the Temple of Kukulcan, is a Mesoamerican step-pyramid that dominates the center of the Chichen Itza 
+        Click to view the album.</a></div>
+  </div>
+</div>
+</div>
+  
+</div>
+
+</body>
+</html>

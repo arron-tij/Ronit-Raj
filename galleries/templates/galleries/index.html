@@ -1,0 +1,13 @@
+{% load static %}
+<h1><u>List of image galleries</u></h1>
+
+<ul>
+    {% for gallery in galleries_list %}
+	{% with gallery.dirname|add:'/index.html' as image_static %}
+ 	 <li><a href="{% static image_static %}">{{ gallery.author}}</a></li>
+         {% endwith %}
+        
+    {% endfor %}
+   </ul>
+
+<br><br><hr><h2><u>Project by Ronit Raj.</u></h2> <br><h3>(I have made all the links active but have verified only that the first one is working completely)</h3>

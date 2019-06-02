@@ -1,0 +1,24 @@
+body{
+    font-family: monospace;
+    background-image: linear-gradient(black,rgba(190, 200, 200,0.8)),url("images/b.jpeg");
+    background-size: cover;
+    color: azure;
+    background-repeat: no-repeat;
+
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 45;
+    font-size: 55;
+    border-bottom: 4px solid orange;
+}
+.t{
+    text-align: center;
+    font-size: 36;
+    color:lemonchiffon;
+}
+.text{
+    margin-top: 97;
+}

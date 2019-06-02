@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  border: 8px solid white;
+  background-color: black;
+  background-clip: padding-box;
+  background-size: cover;
+}
+
+.header {
+  color: #ffffff ;
+  text-shadow: -2px 0 #0000cc, 0 2px #0000cc, 2px 0 #0000cc, 0 -2px #0000cc;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 3px;
+}
+
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 3px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+ 
+
+.desc  {
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    background-color :white;
+    color: #990000;
+    font-weight: bold;
+}
+
+
+.footer  {
+  background-color: #cccccc;
+  padding: 8px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+   body  {
+    border: 8px solid purple;
+    background-color: #00ff00;
+  }
+  
+   
+   .desc  {
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    background-color :white;
+    color: #990000;
+    font-weight: bold;
+   }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+    body  {
+     border: 8px solid white;
+     background-color: #cc0000;
+  }
+   
+    
+    .desc  {
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    background-color :white;
+    color: #990000;
+    font-weight: bold;
+   } 
+}
+</style>
+<body>
+<div class="header">
+  <h1><u>Responsive Image Gallery</u></h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+ <div class="column">
+   <a target="_blank" href="https://media.mnn.com/assets/images/2019/05/steve_biro_eagle_mirro_image.jpg">
+   <img src="https://media.mnn.com/assets/images/2019/05/steve_biro_eagle_mirro_image.jpg" alt="Eagle Image in Symmetrical Reflection" style="width:100%">
+   </a>
+   <div class="desc">Eagle's Symmetrical Reflection</div>
+   <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHYYiVWLwxCzOZJkYfFiX8OvXqkFSif2w9m2W30K-2VHl5sBw">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHYYiVWLwxCzOZJkYfFiX8OvXqkFSif2w9m2W30K-2VHl5sBw"  alt="Luxury Cruise Ship" style="width:100%">
+   </a>
+   <div class="desc">Cruiser Ship</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2015/02/20/16/59/hirsch-643340_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2015/02/20/16/59/hirsch-643340_1280.jpg"  alt="A Deer" style="width:100%">    
+   </a>
+   <div class="desc">Deer</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2016/09/03/23/18/rose-1642970_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2016/09/03/23/18/rose-1642970_1280.jpg"  alt="Watering Red Rose" style="width:100%">
+   </a>
+   <div class="desc">Watering Red Rose</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg"  alt="Watering Blue Rose" style="width:100%">
+   </a>
+   <div class="desc">Watering Blue Rose</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2017/05/08/13/15/spring-bird-2295431_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2017/05/08/13/15/spring-bird-2295431_1280.jpg"  alt="A Spring Bird" style="width:100%">
+   </a>
+   <div class="desc">Spring Bird</div>
+ </div>
+ 
+
+ <div class="column">
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2017/02/18/13/55/swan-2077219_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2017/02/18/13/55/swan-2077219_1280.jpg"  alt="A Swan" style="width:100%">
+   </a>
+   <div class="desc">Swan</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"  alt="Tree" style="width:100%">
+   </a>
+   <div class="desc">Tree</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_1280.jpg"  alt="Italy Mountains View" style="width:100%">
+   </a>
+   <div class="desc">Moutain View</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg"  alt="Mountain Landscape" style="width:100%">
+   </a>
+   <div class="desc">Mountain Landscape</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg"  alt="The Road" style="width:100%">
+   </a>
+   <div class="desc">Road</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2014/09/07/21/52/urban-438393_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2014/09/07/21/52/urban-438393_1280.jpg"  alt="Urban People Crowd" style="width:100%">
+   </a>
+   <div class="desc">People crowd</div>
+ </div>
+ 
+
+ <div class="column">
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2016/05/14/12/58/butterfly-1391809_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2016/05/14/12/58/butterfly-1391809_1280.jpg"  alt="A Beautiful Butterfly Image" style="width:100%">
+   </a>
+   <div class="desc">Butterfly</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_1280.jpg"  alt="A Lone Tree" style="width:100%">
+   </a>
+   <div class="desc">Lone Tree</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821_1280.jpg"  alt="Autumn Fall Scene" style="width:100%">
+   </a>
+   <div class="desc">Autumn Fall</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569_1280.jpg"  alt="Painted Girl" style="width:100%">
+   </a>
+   <div class="desc">Painted Girl</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2014/12/08/02/59/bench-560435_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2014/12/08/02/59/bench-560435_1280.jpg"  alt="Bench in Autumn Season" style="width:100%">
+   </a>
+   <div class="desc">Autumn Season scene</div>
+   <a target="_blank" href="https://dandapani.org/wp-content/uploads/2017/10/diwali-fireworks-at-golden-temple.jpg">
+   <img src="https://dandapani.org/wp-content/uploads/2017/10/diwali-fireworks-at-golden-temple.jpg"  alt="Lighting Festival of India" style="width:100%">
+   </a>
+   <div class="desc">Diwali</div>
+ </div>
+ 
+
+ <div class="column">
+   <a target="_blank" href="http://educatesquare.com/wp-content/uploads/2012/01/republic-day1.jpg">
+   <img src="http://educatesquare.com/wp-content/uploads/2012/01/republic-day1.jpg"  alt="Republic Day Celebration" style="width:100%">
+   </a>
+   <div class="desc">Republic Day celebration</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2015/07/29/22/56/india-866692_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2015/07/29/22/56/india-866692_1280.jpg"  alt="Taj Mahal" style="width:100%">
+   </a>
+   <div class="desc">Taj Mahal</div>
+   <a target="_blank" href="https://www.agenciatimon.com/es/wp-content/uploads/2018/06/Agua.jpg">
+   <img src="https://www.agenciatimon.com/es/wp-content/uploads/2018/06/Agua.jpg"  alt="Water Drop" style="width:100%">
+   </a>
+   <div class="desc">Water Drop</div>
+   <a target="_blank" href="http://www.excitingindia.in/wp-content/uploads/2015/10/durga-puja-festival-calcutta-kolkata-west-bengal-india.jpg">
+   <img src="http://www.excitingindia.in/wp-content/uploads/2015/10/durga-puja-festival-calcutta-kolkata-west-bengal-india.jpg"  alt="Durga Puja Festival" style="width:100%">
+   </a>
+   <div class="desc">Durga Puja</div>
+   <a target="_blank" href="https://live.staticflickr.com/8406/8629550062_fb1a3b028a_b.jpg">
+   <img src="https://live.staticflickr.com/8406/8629550062_fb1a3b028a_b.jpg"  alt="Holi Festival" style="width:100%">
+   </a>
+   <div class="desc">Holi</div>
+   <a target="_blank" href="https://cdn.pixabay.com/photo/2016/11/06/05/36/landscape-1802337_1280.jpg">
+   <img src="https://cdn.pixabay.com/photo/2016/11/06/05/36/landscape-1802337_1280.jpg"  alt="Landscape" style="width:100%">
+   </a>
+   <div class="desc">Landscape</div>
+ </div>
+</div>
+
+  <div class="footer">
+    <p>Resize the browser window to see how the content respond to it</p>
+  </div>
+</body>
+</html>

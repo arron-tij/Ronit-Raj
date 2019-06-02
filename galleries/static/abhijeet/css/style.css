@@ -1,0 +1,110 @@
+ .container{
+ 	background:url(https://wallpapercave.com/wp/wp3891853.jpg) no-repeat center fixed;
+ 	background-size: cover;
+ 	background-color: rgba(0,0,0,0.1);
+}
+body{
+	font-family:serif;
+}
+h1{
+	text-align:center;
+	color:black;
+	font-size:60px; 
+	margin:30px;
+	text-shadow: 3px 2px red;
+	background-color: rgba(0,0,0,0.1);
+}
+.gallery{
+	margin:30px 30px;
+	background-color: rgba(254, 0, 0, 0.4);
+	align-items: center;
+	
+}
+.gallery img{
+	
+	width: 20%;
+  height: auto;
+	padding:7px;
+	filter:sepia(80%);
+	transition: 1s;
+	opacity: 1;
+
+}
+.gallery img:hover{
+	filter:sepia(0);
+	transform: scale(1.1);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position:absolute;
+    top: 0;
+    left: 400px;
+    width:50% ;
+    height:100%;
+}
+.titl{
+	color:yellow;
+	text-decoration: inset; 
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.hulk{
+	padding-left: 110px
+}
+.marvel{
+	padding-left: 110px
+}
+.iron{
+	padding-left: 110px
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}

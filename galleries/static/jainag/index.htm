@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+#p1{color:blue;
+    text-align:center;
+    font-size:300%;
+    text-shadow: 3px 2px red;
+    background-color: lightgrey;
+    border: 15px solid seagreen;}
+   
+#p2{color:hotpink;
+    background-color:yellow;
+    font-family:forte;
+    font-size:150%;
+    border-left: 6px solid red;
+    padding:5px;}
+   
+#p3{border: 5px double darkblue;
+    border-radius: 20px;
+    text-align:center;
+    font-family:lucida;
+    font-size:175%;
+    background-color:skyblue;
+    position: sticky;
+    top: 0;
+}   
+    
+h1{color:tomato;
+   display:block;}
+   
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightgrey;
+}
+
+.active {
+  background-color: green;
+}
+   
+    
+    
+body{ background: #ffffff url("https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  opacity:0.8;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color:white;
+  color:darkviolet;
+  font-size:200%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Inventions</a></li>
+  <li><a class="active" href="#contact">Gallery</a></li>
+  <li><a href="#about">Search</a></li>
+</ul><br>
+</br>
+
+<h1 id="p1";>Scientists Gallery</h1>
+
+<p id="p2";>Great scientists from different countries.</p>
+<p id="p3";>GAME CHANGERS...</P>
+
+<h1>1.<ins>INDIA</ins></h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.telugu360.com/wp-content/uploads/2015/07/abdul-kalam-1.jpg" title="known as missileman">
+      <img src="https://www.telugu360.com/wp-content/uploads/2015/07/abdul-kalam-1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">A.P.J Abdul kalam</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJyNAjCul6-ZUlFB0ig10htT0E-5PNZJtcCePpdfLTskH5WvK" title="known for raman effect">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJyNAjCul6-ZUlFB0ig10htT0E-5PNZJtcCePpdfLTskH5WvK" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">C.V.Raman</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h1>2.<ins>AMERICA</ins></h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKakhH1zFV35xNQUSPFFvoLVh-S21x_mA021rs7ge6Ozuo7Wxy2g" title="known for electric bulb">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKakhH1zFV35xNQUSPFFvoLVh-S21x_mA021rs7ge6Ozuo7Wxy2g" alt="thomas a edison" width="600" height="400">
+    </a>
+    <div class="desc">Thomas Alva Edison</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://s3.amazonaws.com/thrivemovementassets/resources/images/000/000/192/original/33.5_Nikola_Tesla.jpg" title="known for rotating magneticfield">
+      <img src="http://s3.amazonaws.com/thrivemovementassets/resources/images/000/000/192/original/33.5_Nikola_Tesla.jpg" alt="nikola tesla" width="600" height="400">
+    </a>
+    <div class="desc">Nikola Tesla</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h1>3.<ins>UNITED KINGDOM</ins></h1>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7w2wWHM8gfhxpdi_2Zbxw_Pm7Sb3vITLXf0fPwC472RsgYxk-" title="known for steam engine">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7w2wWHM8gfhxpdi_2Zbxw_Pm7Sb3vITLXf0fPwC472RsgYxk-" alt="james watt" width="600" height="400">
+    </a>
+    <div class="desc">James Watt</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW52_CBadKjXy9GNqT63AEuAlK9AGpEJl49js9cYmkvz6GMYiP" title="known for telephone">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW52_CBadKjXy9GNqT63AEuAlK9AGpEJl49js9cYmkvz6GMYiP" alt="alexander graham bell" width="600" height="400">
+    </a>
+    <div class="desc">Alexander Graham Bell</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanwWGDyqWu8R8fEqa60fBxhFXzdcnS1FPTUnxRHjq_X1z4aeUWg" title="known for laws of motion">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanwWGDyqWu8R8fEqa60fBxhFXzdcnS1FPTUnxRHjq_X1z4aeUWg" alt="newton" width="600" height="400">
+    </a>
+    <div class="desc">Issac Newton</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGzCmlBDBmUWNzCvn1jTZFczNOUJdZc7VbgjBhIebdqzjJ6LxsQ" title="known for planck theory">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGzCmlBDBmUWNzCvn1jTZFczNOUJdZc7VbgjBhIebdqzjJ6LxsQ" alt="planck" width="600" height="400">
+    </a>
+    <div class="desc">Max Planck</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<h1>4.<ins>GERMANY</ins></h1>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvep3_sXHbxxpgA3NbiZrKLbTKjSfhMCzQ65ZzjFWO7M4Wuuc"title="known for photoelectric effect">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvep3_sXHbxxpgA3NbiZrKLbTKjSfhMCzQ65ZzjFWO7M4Wuuc" alt="einstein" width="600" height="400">
+    </a>
+    <div class="desc">Albert Einstein</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbj0Pri6G0Jhwp9fUb2MTqEOACZZ573E-i-KH2S-DNH2KVBuv" title="known for EM waves">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbj0Pri6G0Jhwp9fUb2MTqEOACZZ573E-i-KH2S-DNH2KVBuv" alt="heinrich hertz" width="600" height="400">
+    </a>
+    <div class="desc">Heinrich Hertz</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h1>5.<ins>AUSTRIA</ins></h1>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaeTCG9Pppq8fa3QgIAdl3d1wa-KKdjGwHpehBVOiyLpWOiD6" title="known for doppler effect">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaeTCG9Pppq8fa3QgIAdl3d1wa-KKdjGwHpehBVOiyLpWOiD6" alt="doppler" width="600" height="400">
+    </a>
+    <div class="desc">Christian Doppler</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpbkp2l4W3FC14MXvpDV-_ll4hNieA_PsGNT18BnFBJQoeO7ULg" title="known for his equations">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpbkp2l4W3FC14MXvpDV-_ll4hNieA_PsGNT18BnFBJQoeO7ULg" alt="schrodinger" width="600" height="400">
+    </a>
+    <div class="desc">Erwin Schrodinger</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h1>6.<ins>FRANCE</ins></h1>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4X5zWSwMzC4UVyYpyrJcJMmswniI4ORq92wvWuy0C1w3X8gB8Ag" title="invented first computer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4X5zWSwMzC4UVyYpyrJcJMmswniI4ORq92wvWuy0C1w3X8gB8Ag" alt="pascal" width="600" height="400">
+    </a>
+    <div class="desc">Blaise Pascal</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhXji5wwhZ83hewWF55TaXMM7fHiY8dE5VpkOSK9lngTqVBF0FQ" title="known for matter waves">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhXji5wwhZ83hewWF55TaXMM7fHiY8dE5VpkOSK9lngTqVBF0FQ" alt="de broglie" width="600" height="400">
+    </a>
+    <div class="desc">Louis De Broglie</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+window.alert("JAINAG welcomes you");
+</script>
+
+</body>
+</html>

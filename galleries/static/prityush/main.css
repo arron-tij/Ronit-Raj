@@ -1,0 +1,383 @@
+body{
+    color: black;
+    background-image:linear-gradient(rgba(0,26,51,0.9),rgba(200,200,200,0.1)),url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 28px;
+    font-family: fantasy
+    
+}
+.logo{
+    height: 100px;
+    margin-top: 30px;
+    transition: all .2s ease-in-out;
+}
+.title{
+    font-size: 130%;
+    margin-left: 120;
+    margin-top: -82;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px orange;
+    
+}
+.text{
+    font-size: 60%;
+    margin-left: 122px;
+    margin-top: -55;
+    color: cadetblue
+}
+.logo:hover{
+    transform:scale(1.1);
+}
+.nav{
+    display: flex;
+    text-transform: uppercase;
+    float:right;
+     list-style: none;
+    margin-top: -56px;
+    margin-right: 22px
+    
+}
+.nav li a{
+    font-size: 70%;
+    margin-left: 34;
+   text-decoration: none;
+    color: coral;
+    border: 2px solid green;
+    border-radius: 9px;
+    padding: 4px 6px;
+    
+}
+.nav li a:hover{
+    background-color: antiquewhite;
+}
+.images li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 5px;
+}
+.wildlife{
+    height: 400;
+    width: 580;
+    border: 2px dotted white;
+    border-radius: 20px;
+    margin-left: 12;
+    transition: all .2s ease-in-out;
+}
+.wildlife:hover{
+    transform: scale(0.9);
+    
+}
+.plants{
+     height: 395;
+    width: 560;
+    float: right;
+    margin-left: 158px;
+    border: 2px dotted white;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    
+    
+}
+.plants:hover{
+    transform: scale(0.9);
+}
+.monu{
+     height: 400;
+    width: 580;
+    border: 2px dotted white;
+    border-radius: 20px;
+    margin-left: 12;
+    transition: all .2s ease-in-out;
+
+}
+.beach{
+    height: 700;
+    width: 1320;
+    margin-left: 12;
+    transition: all .2s ease-in-out;
+     border: 2px dotted white;
+    border-radius: 20px;
+
+}
+.beach:hover{
+    transform: scale(0.9);
+}
+.space:hover{
+    transform: scale(0.9);
+}
+.monu:hover{
+    transform: scale(0.9);
+}
+.space{
+    height: 395;
+    width: 560;
+    float: right;
+    margin-left: 158px;
+    border: 2px dotted white;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+
+}
+
+@media only screen and (max-width:1400px){
+    
+    .plants {
+    height: 395;
+    width: 560;
+    }
+    .wildlife{
+    height: 400;
+    width: 520;
+    }
+      .space {
+    height: 395;
+    width: 560;
+    }
+    .monu{
+    height: 400;
+    width: 520;
+    }
+    .beach{
+    height: 700;
+    width: 1320;
+    }
+        
+}
+@media only screen and (max-width:1340px){
+    
+  .plants {
+    height: 395;
+    width: 540;
+    }
+    .wildlife{
+    height: 400;
+    width: 520;
+    }
+     .space {
+    height: 395;
+    width: 540;
+    }
+    .momnu{
+    height: 400;
+    width: 520;
+    }
+      .beach{
+    height: 700;
+    width: 1200;
+    }
+    
+        
+}
+@media only screen and (max-width:1320px){
+    
+  .plants {
+    height: 395;
+    width: 500;
+    }
+    .wildlife{
+    height: 400;
+    width: 500;
+    }
+    .space {
+    height: 395;
+    width: 500;
+    }
+    .monu{
+    height: 400;
+    width: 500;
+    }
+      .beach{
+    height: 700;
+    width: 1150;
+    }
+    
+        
+        
+}
+@media only screen and (max-width:1261px){
+    
+  .plants {
+    height: 395;
+    width: 450;
+    }
+    .wildlife{
+    height: 400;
+    width: 450;
+    }
+    .monu {
+    height: 400;
+    width: 450;
+    }
+    .space{
+    height: 395;
+    width: 450;
+    }
+     .beach{
+    height: 700;
+    width: 1100;
+    }
+        
+        
+}
+@media only screen and (max-width:1161px){
+    
+   .plants {
+    height: 395;
+    width: 400;
+    }
+    .wildlife{
+    height: 400;
+    width: 400;
+    }
+    .monu {
+    height: 395;
+    width: 400;
+    }
+    .space{
+    height: 390;
+    width: 400;
+    }
+     .beach{
+    height: 700;
+    width: 1000;
+    }
+        
+        
+}
+@media only screen and (max-width:1111px){
+    
+  .plants {
+    height: 395;
+    width: 340;
+    }
+    .wildlife{
+    height: 400;
+    width: 350;
+    }
+    .monu {
+    height: 395;
+    width: 350;
+    }
+    .space{
+    height: 390;
+    width: 340;
+    }
+     .beach{
+    height: 700;
+    width: 870;
+    }
+        
+        
+}
+@media only screen and (max-width:951px){
+    
+  .plants {
+    height: 395;
+    width: 300;
+    }
+    .wildlife{
+    height: 400;
+    width: 300;
+    }
+    .monu {
+    height: 395;
+    width: 300;
+    }
+    .space{
+    height: 390;
+    width: 300;
+    }
+     .beach{
+    height: 700;
+    width: 780;
+    }
+        
+        
+}
+@media only screen and (max-width:900px){
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (max-width:861px){
+    
+  .plants {
+    height: 335;
+    width: 200;
+    }
+    .wildlife{
+    height: 340;
+    width: 200;
+    }
+    .monu {
+    height: 340;
+    width: 200;
+    }
+    .space{
+    height: 335;
+    width: 200;
+    }
+     .beach{
+    height: 700;
+    width: 580;
+    }
+        
+        
+}
+@media only screen and (max-width:661px){
+    
+  .plants {
+    height: 335;
+    width: 180;
+    }
+    .wildlife{
+    height: 340;
+    width: 180;
+    }
+    .monu {
+    height: 340;
+    width: 180;
+    }
+    .space{
+    height: 335;
+    width: 180;
+    }
+     .beach{
+    height: 700;
+    width: 540;
+    }
+        
+        
+}
+@media only screen and (max-width:621px){
+    
+  .plants {
+    height: 335;
+    width: 420;
+    margin:auto;
+      
+    }
+    .wildlife{
+    height: 340;
+    width: 420;
+        margin: auto;
+    }
+    .monu {
+   height: 340;
+    width: 420;
+        margin: auto;
+    }
+    .space{
+    height: 335;
+    width: 420;
+        margin: auto;
+    }
+     .beach{
+    height: 700;
+    width: 420;
+         margin: auto;
+    }
+        
+        
+}
